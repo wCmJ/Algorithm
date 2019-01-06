@@ -70,5 +70,7 @@ void Heap_Descend_Sort(T *data, int len) {
 	}
 }
 
-
+//construct heap
+//swap the first and the last element
+//maintain heap
 
