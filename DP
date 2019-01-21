@@ -1,0 +1,8 @@
+dynamic programming
+1.  used when a problem can be divided into subproblems that overlap
+2.  solves each subproble once and store the solution in a table
+    2.1 if the same subproblem is encountered again, simply look up its solution in the table.
+
+
+
+
