@@ -103,3 +103,9 @@ public:
         }            
     }
 };
+
+//construct two stacks: one is for number, another is for operator
+//construct table to get priority between operators
+//for numbers in string, push to number stack immediately
+//for operators in string, according to the priority table to choose next action
+//while operator stack is empty, return the top number in number stack
