@@ -1,0 +1,21 @@
+git config --global user.name "lyou"
+git config --global user.email "lyou@126.com"
+mkdir mygit
+cd mygit
+git init
+git add file1.txt
+git add file2.txt file3.txt
+git commit -m "add 3 files"
+git status
+git diff file1.txt
+git add file1.txt
+git commit -m "new change"
+git log(commit history)
+git log --pretty=oneline
+git reset --hard HEAD^(HEAD^^/HEAD~100)
+git reset --hard commitID
+git reflog(command history. get all commands, contain commitID)
+git checkout -- file1.txt(discard all changes in file1.txt in workarea)
+git reset HEAD file1.txt
+
+
