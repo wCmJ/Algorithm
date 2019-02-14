@@ -50,7 +50,7 @@ void postOrder(ListNode *root){
     std::stack<ListNode*> s;
     std::vector<int> v;
     while(true){
-        overLeftChild(root, s);
+        overLeftChild(root, s, v);
         if(s.empty())
             break;
         root = s.top();
