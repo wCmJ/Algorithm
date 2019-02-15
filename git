@@ -16,6 +16,35 @@ git reset --hard HEAD^(HEAD^^/HEAD~100)
 git reset --hard commitID
 git reflog(command history. get all commands, contain commitID)
 git checkout -- file1.txt(discard all changes in file1.txt in workarea)
-git reset HEAD file1.txt
+git reset HEAD file1.txt(discard all changes in stage)
+
+git branch 
+git branch newbranch
+git checkout newbranch
+git checkout -b newbranch
+git checkout master
+git merge newbranch
+git branch -d newbranch
+
+git status(on branch dev)
+git stash
+git checkout master
+git checkout -b issue
+git checkout master
+git merge --no-ff -m " " issue
+git branch -d issue
+git checkout dev
+git stash list
+    git stash apply stash@{0}
+    git stash pop
+
+
+
+
+
+
+
+
+
 
 
