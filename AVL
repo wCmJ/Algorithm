@@ -1,0 +1,58 @@
+AVL BBST
+-2 < num(Node.lheight - Node.rheight) < 2
+zag:
+        g
+ gl                 p
+            pl              v
+                        vl      vr
+g->p->v                        
+                        
+                    p
+        g                       v
+gl          p1           vl             vr   
+                        
+g<-p->v
+
+
+search:
+    same with BST
+insert:
+    steps:
+        1.find the location for insertion
+        2.if it is in AVL tree, return it
+        3.insert to this location
+        4.find the first unbalanced node in parent Node(for)
+        5.rotate it to balance then break(single/double rotate)
+    single:
+        zag-zag/zig-zig
+        balance will be changed when insert a Node to a more longer subtree.
+    double:
+        zag-zig:
+            1.zig rotate to zag-zag
+            2.single
+        zig-zag:
+            1.zag rotate to zig-zig
+            2.single
+    single and double common:
+        1.get the unbalanced node g
+        2.get g's taller child node p
+        3.get p's taller child node v
+        4.get their relation zag/zig
+remove:
+    steps:
+        1.find the location for remove
+        2.if not found, return NULL
+        3.remove it as BST remove
+        4.traverse its parent Node to find unbalanced Node(logn)
+        5.rotate all unbalanced Nodes to rebalance(single/double rotate)
+    single:
+        
+    
+    double:
+        
+        
+        
+        
+
+
+
