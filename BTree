@@ -1,0 +1,51 @@
+m rank B-Tree
+In every node, number of element between m/2 up -1 ~ m-1, min = m/2 up -1, max = m-1
+vector<T> ele[n];
+vector<Node*> p[n+1];
+
+insert:
+    find location in the leaf level
+    insert new element to vector ele
+    while size is greater than max
+        pick the mid one and inserted to up level until to root.
+    return
+    
+remove:
+    find the ele, and get its succ.
+    exchange these two ele
+    remove the succ
+    after remove
+    if size is less than min,
+        1. get its brother node that size is greater than min,
+            transfer one ele between this.
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
