@@ -10,7 +10,22 @@ int BinarySearch(T const *p, size_t lo, size_t hi, T e)
     return --lo;
 }
 
-
+int BinarySearchClosed(int *p, size_t start, size_t end, int val)
+{
+    if(p == NULL)
+        return -1;
+    while(start < end)
+    {
+        int mid = (start+end)>>1;   
+        if(p[mid] == val)
+            return mid;
+        else if(p[mid] < val)
+            start = mid+1;
+        else
+            end = mid;
+    }
+    return -1;   
+}
 
 
 
